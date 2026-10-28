@@ -1,0 +1,18 @@
+# Downloaded providers and working data
+.terraform/
+
+# Local state and backups
+*.tfstate
+*.tfstate.*
+
+# Local input values
+*.tfvars
+*.tfvars.json
+
+# Saved plans
+*.tfplan
+tfplan
+
+# Crash logs
+crash.log
+crash.*.log
