@@ -1,0 +1,5 @@
+order_id,order_date,product,quantity,unit_price,order_total
+1001,2026-10-01,Laptop,1,800,800
+1002,2026-10-01,Mouse,2,25,50
+1003,2026-10-02,Keyboard,1,60,60
+1004,2026-10-02,Monitor,2,200,400

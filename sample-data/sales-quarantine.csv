@@ -1,0 +1,2 @@
+order_id,order_date,product,quantity,unit_price,rejection_reason
+1005,2026-10-03,Mouse,-1,25,Quantity must be positive

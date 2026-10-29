@@ -1,7 +1,7 @@
 resource "azurerm_storage_account" "data_lake" {
   name                     = var.storage_account_name
   resource_group_name      = azurerm_resource_group.data_platform.name
-  location                 = "westus"
+  location                 = var.storage_location
   account_tier             = "Standard"
   account_replication_type = "LRS"
   account_kind             = "StorageV2"

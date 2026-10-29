@@ -23,3 +23,8 @@ variable "data_layers" {
   type        = set(string)
   default     = ["bronze", "silver", "gold"]
 }
+variable "storage_location" {
+  description = "Azure region for the data lake."
+  type        = string
+  default     = "westus"
+}

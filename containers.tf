@@ -1,7 +1,11 @@
-resource "azurerm_storage_container" "layers" {
-  for_each = var.data_layers
+module "data_layers" {
+  source = "./modules/data_layers"
 
-  name                  = each.value
-  storage_account_id    = azurerm_storage_account.data_lake.id
-  container_access_type = "private"
+  storage_account_id = azurerm_storage_account.data_lake.id
+  container_names    = var.data_layers
+}
+
+moved {
+  from = azurerm_storage_container.layers
+  to   = module.data_layers.azurerm_storage_container.layers
 }
