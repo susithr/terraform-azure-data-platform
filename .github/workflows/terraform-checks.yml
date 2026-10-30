@@ -1,4 +1,4 @@
-name: Terraform checks
+name: Terraform and Python checks
 
 on:
   push:
@@ -41,3 +41,10 @@ jobs:
 
       - name: Test container module
         run: terraform -chdir=modules/data_layers test
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Test sales validation rules
+        run: python -m unittest -v test_sales_rules
