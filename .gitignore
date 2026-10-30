@@ -16,3 +16,6 @@ tfplan
 # Crash logs
 crash.log
 crash.*.log
+
+__pycache__/
+*.pyc
