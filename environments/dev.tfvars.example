@@ -1,0 +1,6 @@
+environment          = "dev"
+storage_account_name = "stexampledev12345"
+
+data_layers = ["bronze", "silver", "gold", "quarantine"]
+
+storage_location = "westus"

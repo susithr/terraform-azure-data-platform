@@ -1,0 +1,4 @@
+environment          = "test"
+storage_account_name = "stexampletest12345"
+storage_location     = "westus"
+data_layers          = ["bronze", "silver", "gold", "quarantine"]
