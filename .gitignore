@@ -19,3 +19,5 @@ crash.*.log
 
 __pycache__/
 *.pyc
+
+.venv/
