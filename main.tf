@@ -14,7 +14,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "data_platform" {
-  name     = "rg-data-platform-dev"
+  name     = "rg-data-platform-${var.environment}"
   location = "eastus"
 
   tags = local.common_tags
